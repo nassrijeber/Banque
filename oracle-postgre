@@ -1,0 +1,23 @@
+Le principe est généralement le suivant. A une base de données est associé un ou plusieurs espaces de stockage (« storage » dans la littérature anglo saxonne) que l’on appelle « tablespace » dans Oracle et « filegroup » dans SQL Server. Ces espaces de stockage constitue la destination du stockage des données des tables. A la création d’une table ou d’un index, il suffit de préciser le « storage » que l’on souhaite affecté à l’objet.
+Chaque storage doit comporter au moins un fichier, mais peut en compter plusieurs.
+Pour chaque fichier créé on peut généralement préciser la taille minimale, maximale et le pas de croissance.
+
+
+Enfin, Oracle et SQL Server permettent de placer les espaces de stockage que l’on souhaite en READ ONLY, 
+ce qui permet d’éviter tout verrouillage.
+
+
+
+PostGreSQL ne dispose d’aucune gestion des espaces de stockage, autre que celle de déclarer un ou plusieurs 
+répertoire en tant que « storage » pour une base
+
+La notion de tablespace PG ne fait qu’indiquer un répertoire.
+Voici la syntaxe PG (v9.1.1):
+CREATE TABLESPACE tablespace_name [ OWNER user_name ] LOCATION 'directory'
+Ce que vous ne pouvez pas faire avec PostGreSQL :
+1) vous ne pouvez pas indiquer une taille minimale de l’espace de stockage
+2) vous ne pouvez pas indiquer une taille maximale de l’espace de stockage
+3) vous ne pouvez pas indiquer un pas de croissance de l’espace de stockage
+4) vous ne pouvez pas ajouter un autre répertoire a un tablespace déja créé
+5) vous ne pouvez pas placer un espace de stockage en READ ONLY pour des tables statiques afin d’éviter le verrouillage
+Toutes ces possibilités existent sur Oracle, SQL Server, IBM Db2, Sybase ASE…
