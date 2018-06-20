@@ -19,3 +19,6 @@ d'exécution de votre application entière doivent être exécutés en utilisant
 Protractor est destiné à exécuter des tests du point de vue de l'utilisateur - si votre test peut être écrit
 comme des instructions pour un humain interagissant avec votre application, il devrait s'agir d'un test de bout en bout écrit 
 avec Protractor.
+
+#RXJS
+http://www.learn-angular.fr/comprendre-rxjs/
