@@ -4,7 +4,9 @@ http://blog.soat.fr/2018/02/tests-unitaires-avec-angular-partie-1/
 karam oteur de test, jasmine framework d'assertions( expect....)
 ->test unitaire
 
-Protractor est une application qui permet d’exécuter vos tests dans Node.js plutôt que dans un navigateur internet, comme Karma le propose. Protractor communique ensuite avec le navigateur par l’intermédiaire de Selenium. 
+http://javamind-fr.blogspot.com/2015/03/tests-dintegration-dans-une-application.html
+Protractor est une application qui permet d’exécuter vos tests dans Node.js plutôt que dans un navigateur internet, 
+comme Karma le propose. Protractor communique ensuite avec le navigateur par l’intermédiaire de Selenium. 
 ->test fonctionnel
 //cours interessant
 
