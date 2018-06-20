@@ -1,0 +1,19 @@
+#test
+
+http://blog.soat.fr/2018/02/tests-unitaires-avec-angular-partie-1/
+karam oteur de test, jasmine framework d'assertions( expect....)
+->test unitaire
+
+Protractor est une application qui permet d’exécuter vos tests dans Node.js plutôt que dans un navigateur internet, comme Karma le propose. Protractor communique ensuite avec le navigateur par l’intermédiaire de Selenium. 
+->test fonctionnel
+//cours interessant
+
+=>
+
+Karma est un excellent outil pour les tests unitaires, et Protractor est destiné aux tests de bout en bout ou d'intégration.
+Cela signifie que de petits tests pour la logique de vos contrôleurs, directives et services individuels 
+doivent être exécutés en utilisant Karma. Les gros tests dans lesquels vous avez une instance en cours 
+d'exécution de votre application entière doivent être exécutés en utilisant Protractor. 
+Protractor est destiné à exécuter des tests du point de vue de l'utilisateur - si votre test peut être écrit
+comme des instructions pour un humain interagissant avec votre application, il devrait s'agir d'un test de bout en bout écrit 
+avec Protractor.
